@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="mycss/login.css">
+	<script src="./js/login.js" type="text/javascript"></script>
+	<script src="./js/bootstrap.js" type="text/javascript"></script>
+	<title>BAHS Login</title>
+</head>
+<body class="bodylogin">
+	<div id="body">
+		<div id="imgbg">
+			<img src="./image/without.png">
+			
+		</div>
+
+		<div class="formlog" id="myForm">
+  			<form name="f1" action="login.php" onsubmit="return validation()" method="POST" class="form-container"> <!--action="/action_page.php"-->
+    			<img class="user-icon" src="./image/userlog.png">
+    			<!-- <h1>Login</h1> -->
+
+    			<label for="email"><b>Username</b></label>
+    			  	<div id="icons">
+    					<img class="icon user1" src="./image/usericon.png">
+    				</div>
+    					<input type="text" placeholder="Enter your Email" name="user1" id="user1" required>
+    			<hr class="hr 1">
+
+    			<label for="psw"><b>Password</b></label>
+    			    <div id="icons2">
+    					<img class="icon pass1" src="./image/password.png">
+    				</div>
+    					<input type="password" placeholder="Enter your Password" name="pass" id="pass" required>
+    			<hr class="hr 2">
+
+    			<a href="#"> Forgot Password?</a>
+				
+				<input type =  "submit" class = "btn" value = "Login" /> 
+    			
+  			</form>
+		</div>
+		
+	</div>
+</body>
+</html>
