@@ -6,12 +6,12 @@
         //to prevent from mysqli injection  
         $username = stripcslashes($username);  // stripclashes remove backslashes if it has
         $password = stripcslashes($password);  
-        $username = mysqli_real_escape_string($con, $username);  
-        $password = mysqli_real_escape_string($con, $password);  
+        $username = mysqli_real_escape_string($connection, $username);  
+        $password = mysqli_real_escape_string($connection, $password);  
       
         $sql = "SELECT * FROM user WHERE user_username = '$username' OR user_email = '$username' AND user_password = '$password'";
-        $result = mysqli_query($con, $sql);  
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
+        $result = mysqli_query($connection, $sql);  
+        $row = mysqli_fetch_array($result, MYSQLI_ASSOC); //check if the db has a r 
         $count = mysqli_num_rows($result);  
           
         if($count == 1){  

@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="mycss/design.css">
 	<script src="./js/sidenav.js" type="text/javascript"></script>
+	<script src="./js/acc.js" type="text/javascript"></script>
 	<script src="./js/bootstrap.js" type="text/javascript"></script>
 	<title>Sample Website (B.A.H.S)</title>
 </head>
@@ -12,23 +13,34 @@
 	<div id="body">
 		<div id="topheader">
 			<div id="health">
-				<a href="#"><img src="./image/aglayan.png"></a>
-				<a href="#"> <strong> HealthStation</strong></a>
+				<a href="index.php"><img src="./image/aglayan.png"></a>
+				<a href="index.php"> <strong> HealthStation</strong></a>
 			</div>
 			<div class="navbar">
-				<a class="home" href="#home">Home</a>
-				<a class="pr" href="#">Patient Record</a>
+				<a class="home" href="index.php">Home</a>
+				<a class="pr" href="record.php">Patient Record</a>
+
 				<div id="form" class="dropdown">
 					<button onclick="myFunction()" class="dropbtn">Forms &#9660</button>
 					<div id="myDropdown" class="dropdown-content">
-					  <a href="#">Adult ITR</a>
-					  <a href="#">Child ITR</a>
-					  <a href="#">Clinic Referral</a>
-					  <a href="#">Family Planning</a>
-					  <a href="#">Prenatal Form</a>
+					  <a href="adult.php">Adult ITR</a>
+					  <a href="child.php">Child ITR</a>
+					  <a href="referral.php">Clinic Referral</a>
+					  <a href="family.php">Family Planning</a>
+					  <a href="prenatal.php">Prenatal Form</a>
 					</div>
 				</div>
-				<a id="logout" href="login.html"> <img src="./image/logout.png"> </a>
+
+				<div id="form" class="dropdown1">
+					<button onclick="myFunction1()" class="dropbtn1">&#9776</button>
+					<div id="myDropdown1" class="dropdown-content1">
+    				  <a href="account.php">Account</a>
+      				  <a href="#about">About</a>
+    				  <a href="#contact">Contact</a>
+					  <a href="login.html">Logout &#9660</a>
+  					</div>
+				</div>
+				<!--<a id="logout" href="login.html"> <img src="./image/logout.png"> </a>-->
 			</div>
 
 			<!--<header id="head">
@@ -52,7 +64,7 @@
 				</div>
 			</div>
 			<div id="patientrecord">
-				<a href="#">Patient Record</a>
+				<a href="record.php">Patient Record</a>
 			</div>
 			<div id="patientimg">
 				<img src="./image/patient.png">
